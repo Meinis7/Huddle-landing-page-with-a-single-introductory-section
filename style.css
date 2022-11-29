@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html, body { 
+    height:100%; 
+    font-family: 'Open Sans', sans-serif; 
+  }
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+button{
+    padding: 15px 90px 15px 90px ;
+    color: #674baf;
+    border: none;
+    margin: 20px 0 20px 0;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+button:hover{
+    cursor: pointer;
+    background-color: #e882e8;
+    color: white;
+    transform: scale(1.04);
+}
+#container{
+    padding: 30px;
+    background-color: #674baf;  
+    background-image:url('./images/bg-mobile.svg');
+    background-repeat: no-repeat;  
+}
+#header img{
+    width: 140px;
+}
+#main{
+    color: white;
+}
+#main-left{
+    margin-bottom: 50px;
+}
+
+#main-left img{
+    width: 100%;  
+}
+#main-right{
+    text-align: center;
+}
+#header, #main{
+    margin-bottom: 50px;
+}
+ul{
+    list-style: none;
+    color: white;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+ul li span{  
+    padding: 7px;
+    border-radius: 50%;
+    border:1px solid white;
+}
+span:hover{
+    cursor: pointer;
+    border:1px solid #e882e8;
+    color: #e882e8;
+}
+@media(min-width:576px){
+    #container{
+        background-image: url(./images/bg-desktop.svg);
+        background-size: cover;
+        height: 100%;
+        padding: 50px 50px 0 70px;
+    }
+    #main{
+        display: flex;
+        align-items: center;
+    }
+    #main-left {
+        flex-basis: 55%;
+        margin: 0;
+    }
+    #main-right{
+        flex-basis: 45%;
+        text-align: left;
+        margin: 0 0 100px 70px;
+    }
+    #header img{
+        width: 200px;
+    }
+    #bottom{
+        margin-top: 85px;
+    }
+    ul{
+        justify-content: right;
+        margin-right: 40px;
+    }    
+    h2{
+        font-size: 2.2rem;
+        margin-right: 100px;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    button{
+        padding: 20px 95px 20px 95px ;
+        font-size: 1.1rem;
+    }
+}
